@@ -1,4 +1,4 @@
-function Chai(){                        // function name should be in capital otherwise vite will not render and with basic create-react-app it doesn't matter.
+function Chai(){                        // function or components name should be in capital otherwise vite will not and basic create-react-app render and gives error.
     return(
         <h3>chai is ready</h3>
     )
