@@ -1,6 +1,6 @@
 function customRender(reactElement, container){
     /*
-    const domElement = document.createElement(reactElement.type)
+    const domElement = document.createElement(reactElement.type)                // lengthy code
     domElement.innerHTML = reactElement.children
     domElement.setAttribute('href', reactElement.props.href)
     domElement.setAttribute('target', reactElement.props.target)
@@ -28,4 +28,4 @@ const reactElement = {
 
 const mainContainer = document.querySelector('#root')
 
-customRender(reactElement, mainContainer)
+customRender(reactElement, mainContainer)    // it will add reactElement to the root
