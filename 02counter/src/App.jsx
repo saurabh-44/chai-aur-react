@@ -12,8 +12,8 @@ them which uses hooks */
 
   const addValue = () => {
     //counter = counter + 1
-    //counter = counter + 1    /* if we write multiple lines of similar code then it's a interesting proplem case, useState sends bunch of updation to ui at the 
-    time of updation algorithm will check it is similar kind of case so it will not execute each line. so only 1st line will execute. */
+    //counter = counter + 1    /*if we write multiple lines of similar code then it's a interesting proplem case, useState sends bunch of updation to ui at the time
+    //of updation algorithm will check it is similar kind of case so it will not execute each line. so only 1st line will execute.*/
 
     // solution of previous case.
     setCounter(prevCounter => prevCounter + 1)       
