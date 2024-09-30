@@ -5,3 +5,5 @@ function Chai(){                        // function or components name should be
 }
 
 export default Chai
+
+// in file name it is not required to capatilize but components should be in capital and in vite the extention should be .jsx
