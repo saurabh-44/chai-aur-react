@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Card({username, btnText="visit me"}) {
+function Card({username, btnText="visit me"}) {     // this is probs means where we are rendering cards then if we give any kind of value at rendering page then it will
+                                                    // transfer to here 
     console.log(username);
   return (
     <div className="relative h-[400px] w-[300px] rounded-md ">
