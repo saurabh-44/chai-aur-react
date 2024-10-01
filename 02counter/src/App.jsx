@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+/*--------------------------------------------------------Hooks----------------------------------------------------------------------------
+=> are functions which use React features like state and lifecycle methods in functional components. 
+=> Before hooks, you could only manage state and lifecycle events in class components, but hooks brought that functionality to functional components, 
+making React code cleaner and simpler.
+
+=> this is the problem when we want to change value of variable whithin multiple places in ui so that react will handle those value at ui according to 
+them which uses hooks */
+
+// useState: allows you to create and manage a state variable in a functional component.
+// Every time the state changes, React re-renders the component to reflect the changes in the UI.
+import { useState } from 'react'  
 import './App.css'
 
 function App() {
-/* this is the problem when we want to change value of variable whithin multiple places in ui so that react will handle those value at ui according to 
-them which uses hooks */
-
+  
   const [counter, setCounter]  = useState(15)        // counter is the value and setcounter is the function which will handle counter at ui position.
-  //let counter = 15
+  //let counter = 15                                 // not a good method
 
   const addValue = () => {
     //counter = counter + 1
