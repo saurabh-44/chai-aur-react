@@ -1,6 +1,15 @@
+/*      useState: This hook manages the state (i.e., variables) for the component. and Creates variables that React keeps track of. When these variables change, 
+                  React automatically updates the UI.
+        useCallback: This memoizes functions so they don’t get recreated on every render. or  Wraps the functions so React only recreates them when their 
+                      dependencies change, improving performance.
+        useEffect: This runs side effects like fetching data or updating something after every render. || This runs the passwordGenerator function whenever 
+                   the length, numberAllowed, or charAllowed states change.
+        useRef: This creates a reference to a DOM element (like an input field) to directly interact with it. || allows us to manipulate the input field 
+                (where the password is shown), like selecting and copying the password.
+
+*/
+
 import { useState, useCallback, useEffect, useRef } from 'react'
-
-
 
 function App() {
   const [length, setLength] = useState(8)
@@ -22,9 +31,7 @@ function App() {
       pass += str.charAt(char)
       
     }
-
     setPassword(pass)
-
 
   }, [length, numberAllowed, charAllowed, setPassword])
 
