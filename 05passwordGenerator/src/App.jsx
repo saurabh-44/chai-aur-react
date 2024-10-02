@@ -33,10 +33,11 @@ function App() {
     }
     setPassword(pass)
 
-  }, [length, numberAllowed, charAllowed, setPassword])
+  }, [length, numberAllowed, charAllowed, setPassword])         // these are dependencies means when they change it will run again
+  // setPassword is only for optimization.
 
   const copyPasswordToClipboard = useCallback(() => {
-    passwordRef.current?.select();
+    passwordRef.current?.select();                          // is used to better optimization.
     passwordRef.current?.setSelectionRange(0, 999);
     window.navigator.clipboard.writeText(password)
   }, [password])
