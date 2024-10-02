@@ -1,3 +1,5 @@
+/*-------------------------------React-Router-DOM-----------------------------------------
+it is not a essential core part of React it is the third party library.*/
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
