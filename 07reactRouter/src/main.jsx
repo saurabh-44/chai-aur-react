@@ -12,6 +12,7 @@ import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
 import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 
+// 1st method to create routes
 // const router = createBrowserRouter([
 //   {
 //     path: '/',
@@ -51,6 +52,6 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} />       // This component takes probes otherwise it will not work
   </React.StrictMode>,
 )
