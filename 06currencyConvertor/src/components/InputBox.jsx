@@ -39,7 +39,7 @@ function InputBox({
                 >
                     
                         {currencyOptions.map((currency) => (
-                            <option key={currency} value={currency}>
+                            <option key={currency} value={currency}>           // when we loop on jsx then it checks that it will not make many times dom so that one key should be pass   
                             {currency}
                             </option>
                         ))}
