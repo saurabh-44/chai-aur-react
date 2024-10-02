@@ -38,8 +38,8 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 // 2nd Method
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
-      <Route path='' element={<Home />} />
+    <Route path='/' element={<Layout />}>                       // for nesting we are giving Layout 
+      <Route path='' element={<Home />} />                      // we can more nesting with the help of Route.
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />           // userid is very important value
