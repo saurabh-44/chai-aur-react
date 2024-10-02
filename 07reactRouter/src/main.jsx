@@ -44,7 +44,8 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />           // userid is very important value
       <Route 
-      loader={githubInfoLoader}
+      loader={githubInfoLoader}   // if we want to fetch data from api then in this case if we hover to Github link then it will call the api even before useEffect 
+                                  // and we can call api here also. 
       path='github' 
       element={<Github />}
        />
