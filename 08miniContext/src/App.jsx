@@ -9,7 +9,7 @@ function App() {
 
   return (
     <UserContextProvider>
-      <h1>React with Chai and share is important</h1>
+      <h1>React with Chai and share is important</h1>                 // directly access with every components
       <Login />
       <Profile />
     </UserContextProvider>
